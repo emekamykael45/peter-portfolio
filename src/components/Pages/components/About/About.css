@@ -1,0 +1,55 @@
+img  {
+    display: block;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+   
+  }
+.mg-top {     
+      margin:80px;
+     padding-top: 20px; 
+       
+  }
+  .long-line {
+      width:100px;
+      height: 5px;
+      background-color:  #FFCB30;
+      margin-bottom: 4.5px;
+  }
+
+  .short-line {
+    width:50px;
+    height: 5px;
+    background-color:  #FFCB30;
+}
+.iconbox{
+    margin:8px;
+    float: left;
+   
+}
+.box{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 363px;
+    top: 476px;
+    background: #1D2733;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+.box h1{
+    margin-top: 20px;
+    color:#FFCB30;
+    text-align: center;
+}
+.box p{
+    color:#Fff;
+    text-align: center;
+    font-size: 22px;
+}
+.box p span {
+    color:#FFCB30;    
+    text-align: center;
+    font-size: 22px;    
+}
+  

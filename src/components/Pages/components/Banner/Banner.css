@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.banner {
+    background-image: url("/assets/images/bg-img.png");
+    background-color: #cccccc;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.banner-text {
+    position: absolute;
+    left: 0px;
+    width: 50vw;
+    height: 100vh;
+    padding-left: 80px;
+    background-color: rgba(73, 87, 96, 0.5);
+    color: white;
+}
+.banner-text .hello {
+    padding-top: 120px;
+    
+}
+.peterPeroro {
+    color: #ffcb30;
+}
+.button {
+    width: 185px;
+    height: 62px;
+    background-color: #ffcb30;
+    border: none;
+    color: white;
+    padding: 15px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 38px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    margin: 4px 2px;
+    cursor: pointer;
+}
