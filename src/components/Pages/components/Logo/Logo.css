@@ -1,0 +1,12 @@
+.logo-link, .logo-link:hover {
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+.logo-link .logo {
+    margin: 0px;
+    font-size: 1.8em;
+    font-weight: bold;
+    color: var(--color-white);
+    letter-spacing: 0.02em;
+}

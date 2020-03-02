@@ -1,0 +1,141 @@
+.footer {
+    margin-top: 120px;
+    background: linear-gradient(102.19deg, rgba(71, 75, 111, 0.9) 0%, rgba(53, 57, 97, 0.95) 33.85%, #1A1F4C 100%);
+}
+
+.footer .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .hero h1 {
+    margin: 80px 0px;
+    font-size: 2.5em;
+    font-weight: 400;
+    line-height: 55px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+
+.footer .hero-hr {
+    margin: 0;
+    height: 0.5px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.footer .foot {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.footer .foot .logo {
+    width: 100px;
+    height: 50px;
+    margin-bottom: 30px;
+}
+
+.footer .foot .links {
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer .foot .links .link {
+    margin: 0;
+    margin-right: 50px;
+    font-size: 0.9em;
+    letter-spacing: 0.03em;
+    color: #FBFBFD;
+}
+.footer .foot .links .link:last-child {
+    margin-right: 0px;
+}
+.footer .foot .links .link:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer .foot .social {
+    display: flex;
+    margin-top: 45px;
+    margin-bottom: 30px;
+}
+
+.footer .foot .social hr {
+    margin: 0 auto;
+    height: 1px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.3);
+}
+.footer .foot .social hr:first-child {
+    margin-right: 30px;
+}
+
+.footer .foot .social .link {
+    margin-top: -15px;
+    margin-right: 30px;
+}
+
+.footer .foot .social .link .icon {
+    width: 32px;
+}
+
+.footer .foot .copy {
+    margin: 0;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    font-size: 0.8em;
+    letter-spacing: 0.03em;
+    color: #FBFBFD;
+}
+
+
+@media screen and (max-width: 725px){
+    .footer .hero h1 {
+        margin: 60px 0px;
+        font-size: 2em;
+        line-height: 48px;
+    }
+}
+
+@media screen and (max-width: 630px){
+    .footer .hero {
+        display: block;
+        padding: 5px 0px;
+        padding-bottom: 60px !important;
+        text-align: center;
+    }
+
+    .footer .hero h1 {
+        margin: 50px 0px;
+    }
+
+    .footer .hero .btn {
+        margin: 0 auto;
+    }
+
+    .footer .foot {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 530px){
+    .footer .hero h1 {
+        margin: 60px 0px;
+        font-size: 2em;
+        line-height: 48px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .footer .hero h1 {
+        margin: 40px 0px;
+        font-size: 1.6em;
+    }
+
+    .footer .foot .links .link {
+        margin-right: 20px;
+        letter-spacing: 0.02em;
+    }
+}
