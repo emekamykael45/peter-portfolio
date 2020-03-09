@@ -1,6 +1,7 @@
 :root {
     --color-white: #FFFFFF;
     --color-yellow: #FFCB30;
+    --color-black: #1D2733;
     --navbar-background: #1D2733;
     --blue: #007bff;
 }
@@ -31,8 +32,26 @@ select:focus,
 }
 
 .section {
-    height: 100vh;
-    padding: 40px 80px !important;
+    padding: 100px 80px;
+    padding-bottom: 0px;
+}
+
+.rule hr {
+    margin: 0;
+    height: 5px;
+    background: var(--color-yellow);
+    border: none;
+}
+.rule.center hr {
+    margin: 0px auto;
+}
+
+.rule .top, .rule.center .top {
+    margin-bottom: 5px;
+    width: 100px;
+}
+.rule .bottom {
+    width: 50px;
 }
 
 .btn {
@@ -54,28 +73,45 @@ select:focus,
     color: var(--color-white);
     background: var(--color-yellow);
     border: 3px solid var(--color-yellow);
-    box-shadow: 0px 5px 10px rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
 }
-.btn-primary:hover {
-    color: var(--color-white);
-    background: var(--color-yellow);
-    border: 3px solid var(--color-yellow);
-    opacity: 0.9;
+.btn-primary:hover,
+.btn-primary:focus {
+    color: var(--color-white) !important;
+    background: var(--color-yellow) !important;
+    border: 3px solid var(--color-yellow) !important;
+    opacity: 0.9 !important;
 }
 
 .btn-secondary {
     color: var(--color-yellow);
     background: transparent;
     border: 3px solid var(--color-yellow);
-    box-shadow: 0px 5px 10px rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
 }
-.btn-secondary:hover {
-    color: var(--color-yellow);
-    background: transparent;
-    border: 3px solid var(--color-yellow);
-    opacity: 0.9;
+.btn-secondary:hover,
+.btn-secondary:focus {
+    color: var(--color-yellow) !important;
+    background: transparent !important;
+    border: 3px solid var(--color-yellow) !important;
+    opacity: 0.9 !important;
+}
+
+.btn-white {
+    color: var(--color-black);
+    background: var(--color-white);
+    border: 3px solid var(--color-white);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+.btn-white:hover,
+.btn-white:focus {
+    color: var(--color-black) !important;
+    background: var(--color-white) !important;
+    border: 3px solid var(--color-white) !important;
+    opacity: 0.9 !important;
 }
 
 .content {
