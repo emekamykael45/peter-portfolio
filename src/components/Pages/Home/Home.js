@@ -1,7 +1,9 @@
+/* eslint-disable react/jsx-no-target-blank */
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar/Navbar";
 import Progress from "../components/Progress/Progress";
+import Contact from "../components/Contact/Contact";
 import Spinner from "../components/Spinner/Spinner";
 import Error from "../components/Error/Error";
 import "./Home.css";
@@ -17,10 +19,22 @@ class Home extends Component {
     componentDidMount = () => {
         window.scroll(0, 0);
     };
+    
+    scrollToPortfolio = () => {
+        const anchor = document.querySelector('#portfolio');
+        anchor.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    };
+
+    scrollToContact = () => {
+        const anchor = document.querySelector('#contact');
+        anchor.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    };
+
 
     render = () => {
 
         const { isLoading, showError, errorMessage } = this.state;
+        const location = this.props.location.hash;
 
         return (
             <>
@@ -28,7 +42,7 @@ class Home extends Component {
                 {showError ? <Error errorMsg={errorMessage} /> : null}
                 <div className="content">
                     
-                    <Navbar />
+                    <Navbar location={location} />
                     <div className="home page">
                         <div id="home" className="banner">
                             <div className="left">
@@ -36,8 +50,8 @@ class Home extends Component {
                                 <h1>I am <span>Peter Peroro</span></h1>
                                 <p>A professional programmer with longtime experience in this field, with longtime experience in this field.</p>
                                 <div className="btn-actions">
-                                    <Link className="btn btn-primary" to="/#portfolio">See portfolio</Link>
-                                    <Link className="btn btn-secondary" to="/#contact">Contact me</Link>
+                                    <Link className="btn btn-primary" to="/#portfolio" onClick={this.scrollToPortfolio}>See portfolio</Link>
+                                    <Link className="btn btn-secondary" to="/#contact" onClick={this.scrollToContact}>Contact me</Link>
                                 </div>
                             </div>
                             <div className="right"></div>
@@ -144,7 +158,7 @@ class Home extends Component {
                                     for <span>Freelancing</span>
                                 </div>
                                 <div className="right">
-                                    <Link className="btn btn-primary" to="/#contact">Contact me</Link>
+                                    <Link className="btn btn-primary" to="/#contact" onClick={this.scrollToContact}>Contact me</Link>
                                     <Link className="btn btn-white" to="#">Download CV</Link>
                                 </div>
                             </div>
@@ -184,7 +198,7 @@ class Home extends Component {
                             </div>
                         </div>
 
-                        <div className="section-six section">
+                        <div id="portfolio" className="section-six section">
                             <h3 className="top-text center">PORTFOLIO</h3>
                             <div className="rule center">
                                 <hr className="top" />
@@ -206,7 +220,7 @@ class Home extends Component {
                                                     <h6>Description</h6>
                                                     <p>Bazuze is an international agri-tech firm with lots of bazuze into the agriculture an international agri-tech firm with lot.</p>
                                                 </div>
-                                                <Link className="btn btn-white" to="#">More info</Link>
+                                                <a className="btn btn-white" href="https://www.google.com" target="_blank">See project</a>
                                             </div>
                                         </div>
                                         <div className="carousel-item">
@@ -220,7 +234,7 @@ class Home extends Component {
                                                     <h6>Description</h6>
                                                     <p>Bazuze is an international agri-tech firm with lots of bazuze into the agriculture an international agri-tech firm with lot.</p>
                                                 </div>
-                                                <Link className="btn btn-white" to="#">More info</Link>
+                                                <a className="btn btn-white" href="https://www.google.com" target="_blank">See project</a>
                                             </div>
                                         </div>
                                         <div className="carousel-item">
@@ -234,7 +248,7 @@ class Home extends Component {
                                                     <h6>Description</h6>
                                                     <p>Bazuze is an international agri-tech firm with lots of bazuze into the agriculture an international agri-tech firm with lot.</p>
                                                 </div>
-                                                <Link className="btn btn-white" to="#">More info</Link>
+                                                <a className="btn btn-white" href="https://www.google.com" target="_blank">See project</a>
                                             </div>
                                         </div>
                                     </div>
@@ -250,6 +264,7 @@ class Home extends Component {
                             </div>
                         </div>
                     </div>
+                    <Contact />
 
                 </div>
             </>

@@ -4,6 +4,8 @@
     padding: 0;
     width: 100%;
     background-image: url("https://res.cloudinary.com/emekamykael45/image/upload/v1583156909/peter/timothy-rose-SAZ9TDctMho-unsplash_1_jzcwno.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .home .banner .left {
@@ -60,30 +62,6 @@
 
 .home .section-one .left {
     width: 55%;
-}
-
-.home .top-text {
-    font-size: 1.7em;
-    line-height: 37px;
-}
-.home .top-text.center {
-    text-align: center;
-}
-
-.home .rule {
-    margin-top: 15px;
-    margin-bottom: 30px;
-}
-
-.home .sub-top-text {
-    margin: 0;
-    margin-bottom: 60px;
-    max-width: 600px;
-}
-.home .sub-top-text.center {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .home .section-one .boxes {
@@ -322,6 +300,7 @@
 
 .home .section-six .carousel .carousel-inner {
     border-radius: 5px;
+    border: 2px solid #1D2733;
 }
 
 .home .section-six .carousel .carousel-item img {
@@ -367,7 +346,7 @@
 }
 
 .home .section-six .carousel .carousel-caption .btn {
-    padding: 7px 20px !important;
+    padding: 7px 15px !important;
     padding-bottom: 8px !important;
 }
 
@@ -385,4 +364,240 @@
     width: 30px !important;
     height: 30px !important;
     background-image: url("https://res.cloudinary.com/emekamykael45/image/upload/v1583762556/peter/left-arrow_e9oqvv.png") !important;
+}
+
+
+@media only screen and (max-width: 1170px) {
+    .home .section-one {
+        display: block;
+    }
+    
+    .home .section-one .left {
+        width: 100%;
+    }
+
+    .home .section-one .sub-top-text {
+        max-width: 100%;
+        margin-bottom: 40px;
+    }
+    
+    .home .section-one .boxes {
+        margin-bottom: 40px;
+    }
+    
+    .home .section-one .right {
+        margin: 0 auto;
+        max-width: 500px;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1015px){
+    .home .banner .left h1 {
+        font-size: 2.5em;
+    }
+}
+
+@media screen and (max-width: 990px){
+    .home .banner .left {
+        padding: 70px 40px;
+        padding-right: 20px;
+    }
+    
+    .home .banner .left h6 {
+        font-size: 1.3em;
+    }
+    
+    .home .banner .left h1 {
+        margin-top: 30px;
+    }
+
+    .home .banner .left .btn-actions {
+        margin-top: 60px;
+    }
+
+    .home .section-four {
+        padding: 50px;
+        display: block;
+    }
+
+    .home .section-four .left {
+        text-align: center;
+    }
+
+    .home .section-four .right {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .home .section-five {
+        padding: 0px 40px;
+    }
+}
+
+@media screen and (max-width: 880px){
+    .home .banner .left {
+        width: 100%;
+        padding: 70px 40px;
+        background: rgba(73, 87, 96, 0.5);
+    }
+
+    .home .section-one .right img {
+        margin-right: 0px;
+        max-width: auto;
+        height: 400px;
+    }
+
+    .home .section-one .right .info {
+        position: relative;
+        bottom: 0px;
+        left: 0px;
+        margin: 0 auto;
+        margin-top: -50px;
+        padding: 15px 0px;
+        width: 120px;
+    }
+
+    .home .section-three .boxes {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        border: none;
+    }
+
+    .home .section-three .boxes .box {
+        border: 0.5px solid #aaaaaa;
+    }
+    .home .section-three .boxes .box:last-child {
+        border-right: 0.5px solid #aaaaaa;
+    }
+}
+
+@media screen and (max-width: 825px){
+    .home .banner .left h1 {
+        margin-top: 20px;
+    }
+
+    .home .banner .left p {
+        margin-top: 20px;
+    }
+
+    .home .section-six .carousel .carousel-caption {
+        display: block !important;
+    }
+
+    .home .section-six .carousel .info h6 {
+        margin-bottom: 5px;
+        text-align: center;
+    }
+
+    .home .section-six .carousel .info {
+        margin-right: 0px;
+        margin-bottom: 12px;
+    }
+    .home .section-six .carousel .info:first-child, .home .section-six .carousel .info:nth-child(2) {
+        width: 100%;
+        margin-right: 0px;
+    }
+
+    .home .section-six .carousel .info p {
+        width: 100%;
+        text-align: center;
+    }
+    .home .section-six .carousel .info:nth-child(2) {
+        margin-bottom: 15px !important;
+    }
+
+    .home .section-six .carousel .carousel-caption .btn {
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 730px){
+    .home .section-two .stats-div {
+        padding-bottom: 70px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 35px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .home .section-one .boxes {
+        display: block;
+    }
+
+    .home .section-one .boxes .box {
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+    .home .section-one .boxes .box:last-child {
+        margin-bottom: 0px;
+    }
+
+    .home .section-three .boxes {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .home .section-five .section {
+        padding-bottom: 70px;
+    }
+
+    .home .section-five .boxes {
+        grid-template-columns: repeat(1, 1fr);
+        border: 0.5px solid #aaaaaa;
+    }
+
+    .home .section-five .boxes .box {
+        border-right: none;
+        border-bottom: 0.5px solid #aaaaaa;
+    }
+    .home .section-five .boxes .box:last-child {
+        border-bottom: none;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .home .section-four .right {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+    }
+
+    .home .section-four .right a {
+        margin: 0 auto;
+    }
+
+    .home .section-four .right a:last-child {
+        margin-left: 0px;
+        margin: 0 auto;
+    }
+
+    .home .banner .left .btn-actions {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+    }
+
+    .home .banner .left .btn-actions a {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .home .banner .left {
+        padding: 70px 20px;
+    }
+
+    .home .section-five {
+        padding: 0px 10px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .home .section-one .right img {
+        height: 370px;
+    }
 }

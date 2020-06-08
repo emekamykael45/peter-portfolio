@@ -1,13 +1,33 @@
+/* eslint-disable eqeqeq */
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Logo from "../Logo/Logo";
 import './Navbar.css';
 
-export default function Navbar({home, about, faq, contact}) {
+
+function scrollToHome() {
+    const anchor = document.querySelector('#home');
+    anchor.scrollIntoView({ behavior: 'smooth', block: 'center' });
+}
+function scrollToAbout() {
+    const anchor = document.querySelector('#about');
+    anchor.scrollIntoView({ behavior: 'smooth', block: 'center' });
+}
+function scrollToPortfolio() {
+    const anchor = document.querySelector('#portfolio');
+    anchor.scrollIntoView({ behavior: 'smooth', block: 'center' });
+}
+function scrollToContact() {
+    const anchor = document.querySelector('#contact');
+    anchor.scrollIntoView({ behavior: 'smooth', block: 'center' });
+}
+
+
+export default function Navbar({ location }) {
 
     return (
         <nav className="navbar navbar-expand-md sticky-top">
-            <Logo />
+            <Logo onClick={scrollToHome} />
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"><img className="menu" alt="" src="https://res.cloudinary.com/emekamykael45/image/upload/v1583156965/peter/menu_cauu9l.png" /></span>
             </button>
@@ -16,20 +36,21 @@ export default function Navbar({home, about, faq, contact}) {
                 <ul className="navbar-nav mr-auto"></ul>
 
                 <ul className="navbar-nav mr-right">
-                    <NavLink className='nav-item' to={home ? home : '#home'}>
+                    <Link className={`nav-item ${location == '#home' && 'active'}`} to='#home' onClick={scrollToHome}>
                         Home
-                    </NavLink>
-                    <NavLink className='nav-item' to={about ? about : '#about'}>
+                    </Link>
+                    <Link className={`nav-item ${location == '#about' && 'active'}`} to='#about'  onClick={scrollToAbout}>
                         About
-                    </NavLink>
-                    <NavLink className='nav-item' to={faq ? faq : '#faq'}>
+                    </Link>
+                    <Link className={`nav-item ${location == '#portfolio' && 'active'}`} to='#portfolio'  onClick={scrollToPortfolio}>
                         Portfolio
-                    </NavLink>
-                    <NavLink className='nav-item' to={contact ? contact : '#contact'}>
+                    </Link>
+                    <Link className={`nav-item ${location == '#contact' && 'active'}`} to='#contact'  onClick={scrollToContact}>
                         Contact
-                    </NavLink>
+                    </Link>
                 </ul>
             </div>
         </nav>
     );
+
 }

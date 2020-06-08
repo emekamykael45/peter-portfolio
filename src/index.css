@@ -36,6 +36,30 @@ select:focus,
     padding-bottom: 0px;
 }
 
+.content {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.page {
+    margin: 0px;
+    width: 100%;
+}
+
+.top-text {
+    font-size: 1.7em;
+    line-height: 37px;
+    letter-spacing: 0.02em;
+}
+.top-text.center {
+    text-align: center;
+}
+
+.rule {
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
 .rule hr {
     margin: 0;
     height: 5px;
@@ -52,6 +76,18 @@ select:focus,
 }
 .rule .bottom {
     width: 50px;
+}
+
+.sub-top-text {
+    margin: 0;
+    margin-bottom: 60px;
+    max-width: 600px;
+    letter-spacing: 0.02em;
+}
+.sub-top-text.center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .btn {
@@ -114,12 +150,38 @@ select:focus,
     opacity: 0.9 !important;
 }
 
-.content {
-    width: 100%;
-    min-height: 100vh;
+
+@media only screen and (min-width: 1500px) {
+    .page {
+        margin: 0 auto;
+        width: 1500px;
+    }
 }
 
-.page {
-    margin: 0px;
-    width: 100%;
+@media screen and (max-width: 990px){
+    .section {
+        padding: 80px 40px;
+        padding-bottom: 0px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .top-text {
+        font-size: 1.4em;
+        line-height: inherit;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .section {
+        padding: 60px 20px;
+        padding-bottom: 0px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .section {
+        padding: 60px 10px;
+        padding-bottom: 0px;
+    }
 }
