@@ -2,10 +2,45 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar/Navbar";
-import Progress from "../components/Progress/Progress";
 import Contact from "../components/Contact/Contact";
 import Spinner from "../components/Spinner/Spinner";
 import Error from "../components/Error/Error";
+import { agriculture,
+    angular,
+    banking,
+    bootstrap,
+    cplus,
+    cordova,
+    css,
+    custom,
+    encryption,
+    fullstack,
+    gaming,
+    html,
+    infrastructure,
+    inventory,
+    ionic,
+    jasmine,
+    java,
+    javascript,
+    jquery,
+    karma,
+    laravel,
+    lending,
+    manufacturing,
+    mobile,
+    node,
+    objective,
+    phaser,
+    php,
+    plugins,
+    python,
+    react,
+    shopping,
+    socket,
+    swift,
+    system
+} from "../../../assets/index";
 import "./Home.css";
 
 
@@ -36,6 +71,49 @@ class Home extends Component {
         const { isLoading, showError, errorMessage } = this.state;
         const location = this.props.location.hash;
 
+        const solutions = [
+            { icon: banking, name: 'Banking' },
+            { icon: shopping, name: 'E-commerce' },
+            { icon: gaming, name: 'Gaming' },
+            { icon: infrastructure, name: 'Infrastructure' },
+            { icon: manufacturing, name: 'Manufacturing' },
+            { icon: agriculture, name: 'Agriculture' },
+            { icon: lending, name: 'Lending' },
+            { icon: system, name: 'System Analysis' },
+            { icon: encryption, name: 'Encryption' },
+            { icon: plugins, name: 'Hybrid App Plugins' },
+            { icon: plugins, name: 'Wordpress Plugins' },
+            { icon: plugins, name: 'Magneto Plugins' },
+            { icon: inventory, name: 'Inventory Management' },
+            { icon: custom, name: 'Custom Software' }
+        ];
+
+        const skills = [
+            { icon: python, name: 'Python' },
+            { icon: cplus, name: 'C++' },
+            { icon: java, name: 'Java' },
+            { icon: html, name: 'HTML' },
+            { icon: css, name: 'CSS' },
+            { icon: javascript, name: 'JavaScript' },
+            { icon: php, name: 'PHP' },
+            { icon: swift, name: 'Swift' },
+            { icon: objective, name: 'Objective C' },
+            { icon: bootstrap, name: 'Bootstrap' },
+            // { icon: '', name: 'SMF' },
+            { icon: laravel, name: 'Laravel' },
+            { icon: ionic, name: 'Ionic' },
+            { icon: jquery, name: 'JQuery' },
+            { icon: angular, name: 'AngularJS' },
+            { icon: react, name: 'ReactJS' },
+            { icon: phaser, name: 'Phaser' },
+            { icon: node, name: 'NodeJS' },
+            { icon: socket, name: 'Socket.io' },
+            { icon: jasmine, name: 'Jasmine' },
+            { icon: karma, name: 'Karma' },
+            { icon: react, name: 'React Native' },
+            { icon: cordova, name: 'Cordova' }
+        ];
+
         return (
             <>
                 <Spinner show={isLoading} />
@@ -46,9 +124,12 @@ class Home extends Component {
                     <div className="home page">
                         <div id="home" className="banner">
                             <div className="left">
-                                <h6>Hello!</h6>
-                                <h1>I am <span>Peter Peroro</span></h1>
-                                <p>A professional programmer with longtime experience in this field, with longtime experience in this field.</p>
+                                <h6>Hello World!</h6>
+                                <h1>I am <span>Peter O. Okafor</span></h1>
+                                <p>A Senior software engineer with a passion for bettering lives through technology.
+                                    <br /><br />
+                                    <span>{`<Committed /> | <Passionate /> | <Experienced />`}</span>
+                                </p>
                                 <div className="btn-actions">
                                     <Link className="btn btn-primary" to="/#portfolio" onClick={this.scrollToPortfolio}>See portfolio</Link>
                                     <Link className="btn btn-secondary" to="/#contact" onClick={this.scrollToContact}>Contact me</Link>
@@ -64,29 +145,26 @@ class Home extends Component {
                                     <hr className="top" />
                                     <hr className="bottom" />
                                 </div>
-                                <p className="sub-top-text">I am information technology enthusuast. I studued law and all its lies. I have a good heart and a good head. I am information technology enthusuast. I studued law and all its lies. I have a good heart and a good head.</p>
+                                <p className="sub-top-text">I am an information technology enthusiast. 
+                                    A computer science graduate with varied work experience and a strong ability 
+                                    to engage and help partners develop innovative solutions that aid growth.
+                                </p>
 
                                 <div className="boxes">
                                     <div className="box">
-                                        <div className="head">
-                                            <img src="" alt="" />
-                                            <h6>Back-End Web Development</h6>
-                                        </div>
-                                        <p>I am information technology enthusuast. I studued law and all its lies and here and there too.</p>
+                                        <img src={fullstack} alt="" />
+                                        <h6>Full Stack Web Development</h6>
                                     </div>
                                     <div className="box">
-                                        <div className="head">
-                                            <img src="" alt="" />
-                                            <h6>Native iOS & Hybrid App Development</h6>
-                                        </div>
-                                        <p>I am information technology enthusuast. I studued law and all its lies and here and there too.</p>
+                                        <img src={mobile} alt="" />
+                                        <h6>Mobile and Desktop App Development</h6>
                                     </div>
                                 </div>
                             </div>
                             <div className="right">
                                 <img src="https://res.cloudinary.com/emekamykael45/image/upload/v1583156908/peter/etty-fidele-l5rez6X2m8k-unsplash_1_qlsz5f.png" alt="" />
                                 <div className="info">
-                                    <h3>9</h3>
+                                    <h3>13</h3>
                                     <h6>Years of</h6>
                                     <p>experience</p>
                                 </div>
@@ -95,22 +173,29 @@ class Home extends Component {
 
                         <div className="section">
                             <div className="section-two section">
-                                <h3 className="top-text">MY SKILLS</h3>
+                                <h3 className="top-text">SOLUTIONS</h3>
                                 <div className="rule center">
                                     <hr className="top" />
                                     <hr className="bottom" />
                                 </div>
-                                <p className="sub-top-text center">I am information technology enthusuast. I studued law and all its lies. I have a good heart and a good head. I am information technology enthusuast. I studued law and all its lies. I have a good heart and a good head.</p>
+                                <p className="sub-top-text center">I am information technology enthusuast. I studued law and all its lies. I have a good heart and a good head. I am information technology enthusuast.</p>
 
-                                <div className="stats-div">
-                                    <Progress name="HELLO JS" value="90" />
-                                    <Progress name="HELLO JS" value="90" />
-                                    <Progress name="HELLO JS" value="90" />
-                                    <Progress name="HELLO JS" value="90" />
-                                    <Progress name="HELLO JS" value="90" />
-                                    <Progress name="HELLO JS" value="90" />
-                                    <Progress name="HELLO JS" value="90" />
-                                    <Progress name="HELLO JS" value="90" />
+                                <div className="solutions-div">
+                                    {solutions.map((item, i) => (
+                                        <div key={i} className="item">
+                                            <img src={item.icon} alt={item.name} />
+                                            <h6>{item.name}</h6>
+                                        </div>
+                                    ))}
+                                </div>
+
+                                <div className="skills-div">
+                                    {skills.map((item, i) => (
+                                        <div key={i} className="item">
+                                            <img src={item.icon} alt={item.name} />
+                                            <h6>{item.name}</h6>
+                                        </div>
+                                    ))}
                                 </div>
                             </div>
                         </div>

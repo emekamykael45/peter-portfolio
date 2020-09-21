@@ -36,14 +36,17 @@
 
 .home .banner .left p {
     margin-top: 30px;
-    font-size: 1em;
+    font-size: 1.15em;
     letter-spacing: 0.02em;
     color: var(--color-white);
     line-height: 28px;
 }
+.home .banner .left p span {
+    font-weight: 500;
+}
 
 .home .banner .left .btn-actions {
-    margin-top: 90px;
+    margin-top: 70px;
     display: flex;
 }
 
@@ -76,21 +79,20 @@
     margin-right: 0px;
 }
 
-.home .section-one .boxes .box .head {
-    display: flex;
-    align-items: center;
+.home .section-one .boxes .box {
+    text-align: center;
+}
+
+.home .section-one .boxes .box img {
     margin-bottom: 15px;
+    width: 60px;
+    height: 60px;
+    background: #FFFFFF;
 }
 
-.home .section-one .boxes .box .head img {
-    width: 40px;
-    height: 40px;
-    margin-right: 15px;
-    background: #C4C4C4;
-}
-
-.home .section-one .boxes .box .head h6 {
+.home .section-one .boxes .box h6 {
     margin: 0;
+    font-size: 1.1em;
 }
 
 .home .section-one .right {
@@ -145,19 +147,59 @@
     text-align: center;
 }
 
-.home .section-two .stats-div {
-    padding-bottom: 100px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 100px;
-    grid-row-gap: 40px;
+.home .section-two .solutions-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -20px;
 }
 
-.home .stats-div .stats h6 {
-    font-size: 0.95em;
+.home .section-two .solutions-div .item {
+    display: flex;
+    align-items: center;
+    padding: 20px;
 }
-.home .stats-div .stats h6 span {
-    float: right;
+
+.home .section-two .solutions-div .item img {
+    margin-right: 15px;
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+}
+
+.home .section-two .solutions-div .item h6 {
+    margin: 0;
+    font-size: 1.03em;
+}
+
+.home .section-two .skills-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    margin-top: 50px;
+    border-top: 1px solid #1D2733;
+}
+
+.home .section-two .skills-div .item {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.home .section-two .skills-div .item img {
+    margin-right: 15px;
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+}
+
+.home .section-two .skills-div .item h6 {
+    margin: 0;
+    font-size: 1.03em;
 }
 
 .home .stats-div .stats .progress {
