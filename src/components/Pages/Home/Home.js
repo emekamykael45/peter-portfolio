@@ -114,6 +114,149 @@ class Home extends Component {
             { icon: cordova, name: 'Cordova' }
         ];
 
+        const experiences = [
+            {
+                start_date: '2020',
+                end_date: null,
+                position: 'React and Laravel Developer (Remote)',
+                company: 'PictureWorks Pty',
+                description: 'Pictureworks is a company that is primarily focused on the automation of processes in the photo and souvenir producing business. As it was a remote job, I learnt the importance of teamwork and use of collaboration tools.',
+                projects: [
+                    'Zensmart design system (React)',
+                    'Zensmart User Interfaces (React)',
+                    'Zensmart Analytics (React and Laravel)'
+                ]
+            },
+            {
+                start_date: '2019',
+                end_date: '2020',
+                position: 'Hybrid and iOS Developer / Senior Developer',
+                company: 'Vela Business Solution',
+                description: 'At Vela, I developed Hybrid app plugins as well as native iOS applications using Swift and Objective-C. The plugins were built for different frameworks. Strict adherence to Version Control best practices were applied. I developed iOS applications for Jaiz Bank and Mint Financial Technology.',
+                projects: [
+                    'React Native plugins (iOS and Android)',
+                    'Cordova/Ionic plugins (iOS and Android)',
+                    'iOS native applications for financial institutions'
+                ]
+            },
+            {
+                projects: [
+                    'Porkoyum (porkoyum.com)',
+                    'Porkmoney (porkmoney.com)',
+                    'Proctorer (proctorer.com)',
+                    'WorkatDubai (workatdubai.com)',
+                    'Osei Consult (oseiconsult.com)',
+                    'HR mobile app',
+                    'Femfumds (femfunds.com)',
+                    'Inventory management System'
+                ]
+            },
+            {
+                start_date: '2018',
+                end_date: 2019,
+                position: 'Team Lead / Senior Developer (LandLagos)',
+                company: 'Divergent Enterprise',
+                description: 'landlagos.com - LandLagos pegs the inflation rate of property to allow for more people to be able to afford them in due time. Landlagos sees that a Nigerian worker become an owner and a decision in their own time',
+                projects: null
+            },
+            {
+                start_date: '2018',
+                end_date: 2019,
+                position: 'Team Lead / Senior Developer (Porkoyum)',
+                company: 'Divergent Enterprise',
+                description: 'porkoyum.com - PorkoYum is the e-commerce subsidiary of PorkMoney that completes the business cycle. At PorkoYum, end-users will be able to procure the chopped, processed and packaged pig produce and by-products.',
+                projects: null
+            },
+            {
+                start_date: '2018',
+                end_date: 2019,
+                position: 'Team Lead / Senior Developer (Porkmoney)',
+                company: 'Divergent Enterprise',
+                description: 'porkmoney.com - Porkmoney.',
+                projects: null
+            },
+            {
+                start_date: '2018',
+                end_date: 2019,
+                position: 'Team Lead / Senior Developer (Proctorer)',
+                company: 'Divergent Enterprise',
+                description: 'proctorer.com - Proctorer.',
+                projects: null
+            },
+            {
+                start_date: '2018',
+                end_date: 2019,
+                position: 'Team Lead / Senior Developer (WorkatDubai)',
+                company: 'Divergent Enterprise',
+                description: 'workatdubai.com - WorkatDubai.',
+                projects: null
+            },
+            {
+                start_date: '2018',
+                end_date: 2019,
+                position: 'Team Lead / Senior Developer (WorkatDubai)',
+                company: 'Divergent Enterprise',
+                description: 'workatdubai.com - WorkatDubai.',
+                projects: null
+            },
+            {
+                start_date: '2018',
+                position: 'Developer (Frontend)',
+                company: 'Kiakia FX',
+                description: 'KiaKiaFX is an innovative and insightful company that deals with foreign exchange online. During my time at KiaKiaFX I worked on the frontend part of things as well as server configuration, setup and deployment.',
+                projects: null
+            },
+            {
+                start_date: '2018',
+                position: 'Team Lead, Senior Developer (Freelance)',
+                company: 'E-Vents',
+                description: 'The position entailed managing a team of developers, liaising with clients, designing the application as well being actively involved in programming. I worked with a Nodejs server on a VPS, worked with socket.io and developed an android application with Ionic which uses Angularjs.',
+                projects: null
+            },
+            {
+                start_date: '2018',
+                position: 'Designer, System Analyst and Programmer (Freelance)',
+                company: 'Dornnie Private School',
+                description: 'The project is a school management software built with Laravel. The job was a freelance effort and was handled alone. The project involved setting up mailing, handling sessions and a host of other functions.',
+                projects: null
+            },
+            {
+                start_date: '2018',
+                position: 'Developer (Freelance)',
+                company: 'Hospital Management System',
+                description: 'The project is a hospital management software built with Java. The job involved collating data, planning the system, designing it, developing and testing it for soundness.',
+                projects: null
+            },
+            {
+                start_date: '2017',
+                position: 'Designer, System Analyst and Programmer (Freelance)',
+                company: 'Stellar Dental Services',
+                description: 'The job was a freelance effort and was handled alone it involved designing, developing and managing a website for a dental practitioner.',
+                projects: null
+            },
+            {
+                start_date: '2016',
+                position: 'Designer, System Analyst and Programmer (Freelance)',
+                company: 'Nigerian Genealogy',
+                description: 'Worked as the primary designer, system analyst and programmer, the job was a solo job that involved planning, designing, developing, debugging and testing the website. The job also involved building a content management system for use by the owner/administrator of the website.',
+                projects: null
+            },
+            {
+                start_date: '2016',
+                position: 'Designer, System Analyst and Programmer (Freelance)',
+                company: 'Encrypt',
+                description: 'Worked as the only designer, programmer and system analyst the position entailed planning, implementing and testing several worst case scenarios for the android application.',
+                projects: null
+            },
+            {
+                start_date: '2016',
+                position: 'Designer, System Analyst and Programmer',
+                company: 'Inventory Management System',
+                description: 'This project involved developing an inventory management system for a client. The inventory management system kept track of a super markets stock and gave notifications when certain goods were low. The system also recommended the appropriate time to purchase goods.',
+                projects: null
+            }
+        ];
+
         return (
             <>
                 <Spinner show={isLoading} />
@@ -201,7 +344,7 @@ class Home extends Component {
                         </div>
 
                         <div className="section-three section">
-                            <h3 className="top-text">WORK EXPERIENCES</h3>
+                            <h3 className="top-text">PROFESSIONAL WORK EXPERIENCE</h3>
                             <div className="rule left">
                                 <hr className="top" />
                                 <hr className="bottom" />
@@ -209,30 +352,21 @@ class Home extends Component {
                             <p className="sub-top-text">I am information technology enthusuast. I studued law and all its lies. I have a good heart and a good head. I am information technology enthusuast. I studued law and all its lies. I have a good heart and a good head.</p>
 
                             <div className="boxes">
-                                <div className="box">
-                                    <h5>June 2019 - Sept 2020</h5>
-                                    <h4>Back-End Web Developer</h4>
-                                    <h6>Adobe Inc.</h6>
-
-                                    <p>- This is where things happen ontop the matter and its small small things around her now.</p>
-                                    <p>- This is where things happen ontop the matter and its small small things around her now.</p>
-                                </div>
-                                <div className="box">
-                                    <h5>June 2019 - Sept 2020</h5>
-                                    <h4>Back-End Web Developer</h4>
-                                    <h6>Adobe Inc.</h6>
-
-                                    <p>- This is where things happen ontop the matter and its small small things around her now.</p>
-                                    <p>- This is where things happen ontop the matter and its small small things around her now.</p>
-                                </div>
-                                <div className="box">
-                                    <h5>June 2019 - Sept 2020</h5>
-                                    <h4>Back-End Web Developer</h4>
-                                    <h6>Adobe Inc.</h6>
-
-                                    <p>- This is where things happen ontop the matter and its small small things around her now.</p>
-                                    <p>- This is where things happen ontop the matter and its small small things around her now.</p>
-                                </div>
+                                {experiences.map((item, i) => (
+                                    <div key={i} className="box">
+                                        <h5>{item.start_date} {item.end_date && `- ${item.end_date}`}</h5>
+                                        <h4>- {item.position}</h4>
+                                        <h6>{item.company}</h6>
+                                        <p>{item.description}</p>
+                                        
+                                        {item.projects && <>
+                                            <h6>Projects:</h6>
+                                            {item.projects.map((project, i) => (
+                                                <p key={i} className="list">- {project}</p>
+                                            ))}
+                                        </>}
+                                    </div>
+                                ))}
                             </div>
                         </div>
 

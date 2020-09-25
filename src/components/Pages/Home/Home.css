@@ -213,39 +213,45 @@
 }
 
 .home .section-three .boxes {
-    display: flex;
-    border: 0.5px solid #aaaaaa;
-    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 25px;
 }
 
 .home .section-three .boxes .box {
     padding: 20px;
-    border-right: 0.5px solid #aaaaaa;
-}
-.home .section-three .boxes .box:last-child {
-    border-right: none;
+    height: fit-content;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.08);
+    border-left: 4px solid #FFCB30;
+    border-radius: 5px;
 }
 
 .home .section-three .boxes .box h5 {
-    margin-bottom: 10px;
+    margin-bottom: 7px;
     font-size: 0.95em;
     color: #FFCB30;
 }
 
 .home .section-three .boxes .box h4 {
-    margin-bottom: 12px;
-    font-size: 1.15em;
+    margin-bottom: 10px;
+    font-size: 1.1em;
     color: #1D2733;
 }
 
 .home .section-three .boxes .box h6 {
-    margin-bottom: 15px;
+    margin-bottom: 12px;
     font-size: 1em;
     letter-spacing: 0.02em;
 }
 
 .home .section-three .boxes .box p {
-    margin-bottom: 8px;
+    margin-bottom: 12px;
+    font-size: 0.95em;
+    letter-spacing: 0.02em;
+}
+.home .section-three .boxes .box p.list {
+    margin-bottom: 5px;
 }
 .home .section-three .boxes .box p:last-child {
     margin-bottom: 0px;
