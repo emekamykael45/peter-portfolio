@@ -219,12 +219,12 @@
 }
 
 .home .section-three .boxes .box {
-    padding: 20px;
+    padding: 25px 20px;
     height: fit-content;
     background: #FFFFFF;
     box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.08);
-    border-left: 4px solid #FFCB30;
-    border-radius: 5px;
+    border-top: 4px solid #FFCB30;
+    border-radius: 0px 0px 5px 5px;
 }
 
 .home .section-three .boxes .box h5 {
@@ -244,6 +244,9 @@
     font-size: 1em;
     letter-spacing: 0.02em;
 }
+.home .section-three .boxes .box h6.links {
+    margin-top: 12px;
+}
 
 .home .section-three .boxes .box p {
     margin-bottom: 12px;
@@ -255,6 +258,10 @@
 }
 .home .section-three .boxes .box p:last-child {
     margin-bottom: 0px;
+}
+.home .section-three .boxes .box p.list a {
+    color: #FFCB30;
+    font-weight: 500;
 }
 
 .home .section-four {
@@ -293,49 +300,40 @@
 }
 
 .home .section-five {
-    padding: 0px 80px;
+    padding: 0px;
 }
 
-.home .section-five .section{
-    background: rgba(196, 196, 196, 0.1);
+.home .section-five .section {
     padding-bottom: 100px;
-    border-radius: 0px 0px 5px 5px;
 }
 
 .home .section-five .boxes {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    background: var(--color-white);
-    border: 0.5px solid #aaaaaa;
-    border-bottom: none;
-    border-radius: 5px;
+    grid-gap: 25px;
 }
 
 .home .section-five .boxes .box {
-    padding: 20px;
-    border-right: 0.5px solid #aaaaaa;
-    border-bottom: 0.5px solid #aaaaaa;
-}
-.home .section-five .boxes .box:last-child {
-    border-right: none;
-}
-
-.home .section-five .boxes .box h5 {
-    margin-bottom: 10px;
-    font-size: 0.95em;
-    color: #FFCB30;
+    padding: 30px 20px;
+    height: fit-content;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.08);
+    border-top: 4px solid #aaaaaa;
+    border-radius: 0px 0px 5px 5px;
 }
 
 .home .section-five .boxes .box h4 {
     margin-bottom: 12px;
     font-size: 1.15em;
-    color: #1D2733;
+    color: #FFCB30;
 }
 
 .home .section-five .boxes .box h6 {
     margin: 0;
     font-size: 1em;
     letter-spacing: 0.02em;
+    font-weight: 400;
+    line-height: inherit;
 }
 
 .home .section-six {

@@ -14,15 +14,15 @@ export default function Navbar() {
                         <hr className="top" />
                         <hr className="bottom" />
                     </div>
-                    <p className="sub-top-text">I am available to be contact today, tomorrow and forever whenever you want me or need me to you know help your ministry.</p>
+                    <p className="sub-top-text">Feel free to reach out to me for your technology needs.</p>
 
                     <div className="info">
                         <h6>PHONE:</h6>
-                        <p>+234 906 558 2156, +234 906 558 2156.</p>
+                        <p>+234 803 942 2740.</p>
                     </div>
                     <div className="info">
                         <h6>EMAIL:</h6>
-                        <p>azonobi.michael@gmail.com</p>
+                        <p>me@okaforpeter.com</p>
                     </div>
 
                     <div className="icons">
@@ -44,6 +44,7 @@ export default function Navbar() {
                     <button className="btn btn-submit">Send message</button>
                 </form>
             </div>
+            <p className="copyright">© All rights reserved . Okafor Peter {new Date().getFullYear()}</p>
         </div>
     );
 

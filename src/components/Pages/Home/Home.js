@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/anchor-has-content */
+/* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable react/jsx-no-target-blank */
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
@@ -137,18 +139,9 @@ class Home extends Component {
                     'React Native plugins (iOS and Android)',
                     'Cordova/Ionic plugins (iOS and Android)',
                     'iOS native applications for financial institutions'
-                ]
-            },
-            {
-                projects: [
-                    'Porkoyum (porkoyum.com)',
-                    'Porkmoney (porkmoney.com)',
-                    'Proctorer (proctorer.com)',
-                    'WorkatDubai (workatdubai.com)',
-                    'Osei Consult (oseiconsult.com)',
-                    'HR mobile app',
-                    'Femfumds (femfunds.com)',
-                    'Inventory management System'
+                ],
+                links: [
+                    { name: 'Jaiz Mobile Plus App', url: 'https://google.com' }
                 ]
             },
             {
@@ -156,8 +149,11 @@ class Home extends Component {
                 end_date: 2019,
                 position: 'Team Lead / Senior Developer (LandLagos)',
                 company: 'Divergent Enterprise',
-                description: 'landlagos.com - LandLagos pegs the inflation rate of property to allow for more people to be able to afford them in due time. Landlagos sees that a Nigerian worker become an owner and a decision in their own time',
-                projects: null
+                description: 'LandLagos pegs the inflation rate of property to allow for more people to be able to afford them in due time. Landlagos sees that a Nigerian worker become an owner and a decision in their own time',
+                projects: null,
+                links: [
+                    { name: 'LandLagos', url: 'https://landlagos.com' }
+                ]
             },
             {
                 start_date: '2018',
@@ -165,7 +161,10 @@ class Home extends Component {
                 position: 'Team Lead / Senior Developer (Porkoyum)',
                 company: 'Divergent Enterprise',
                 description: 'porkoyum.com - PorkoYum is the e-commerce subsidiary of PorkMoney that completes the business cycle. At PorkoYum, end-users will be able to procure the chopped, processed and packaged pig produce and by-products.',
-                projects: null
+                projects: null,
+                links: [
+                    { name: 'PorkoYum', url: 'https://porkoyum.com' }
+                ]
             },
             {
                 start_date: '2018',
@@ -173,7 +172,10 @@ class Home extends Component {
                 position: 'Team Lead / Senior Developer (Porkmoney)',
                 company: 'Divergent Enterprise',
                 description: 'porkmoney.com - Porkmoney.',
-                projects: null
+                projects: null,
+                links: [
+                    { name: 'Porkmoney', url: 'https://porkmoney.com' }
+                ]
             },
             {
                 start_date: '2018',
@@ -181,7 +183,10 @@ class Home extends Component {
                 position: 'Team Lead / Senior Developer (Proctorer)',
                 company: 'Divergent Enterprise',
                 description: 'proctorer.com - Proctorer.',
-                projects: null
+                projects: null,
+                links: [
+                    { name: 'Proctorer', url: 'https://proctorer.com' }
+                ]
             },
             {
                 start_date: '2018',
@@ -189,14 +194,47 @@ class Home extends Component {
                 position: 'Team Lead / Senior Developer (WorkatDubai)',
                 company: 'Divergent Enterprise',
                 description: 'workatdubai.com - WorkatDubai.',
+                projects: null,
+                links: [
+                    { name: 'WorkatDubai', url: 'https://workatdubai.com' }
+                ]
+            },
+            {
+                start_date: '2018',
+                end_date: 2019,
+                position: 'Team Lead / Senior Developer (Osei Consult)',
+                company: 'Divergent Enterprise',
+                description: 'oseiconsult.com - Osei Consult.',
+                projects: null,
+                links: [
+                    { name: 'Osei Consult', url: 'https://oseiconsult.com' }
+                ]
+            },
+            {
+                start_date: '2018',
+                end_date: 2019,
+                position: 'Team Lead / Senior Developer (HR mobile app)',
+                company: 'Divergent Enterprise',
+                description: 'HR mobile app.',
                 projects: null
             },
             {
                 start_date: '2018',
                 end_date: 2019,
-                position: 'Team Lead / Senior Developer (WorkatDubai)',
+                position: 'Team Lead / Senior Developer (Femfumds)',
                 company: 'Divergent Enterprise',
-                description: 'workatdubai.com - WorkatDubai.',
+                description: 'femfunds.com - Femfumds.',
+                projects: null,
+                links: [
+                    { name: 'Femfumds', url: 'https://femfunds.com' }
+                ]
+            },
+            {
+                start_date: '2018',
+                end_date: 2019,
+                position: 'Team Lead / Senior Developer (Inventory management System)',
+                company: 'Divergent Enterprise',
+                description: 'Inventory management System.',
                 projects: null
             },
             {
@@ -204,7 +242,10 @@ class Home extends Component {
                 position: 'Developer (Frontend)',
                 company: 'Kiakia FX',
                 description: 'KiaKiaFX is an innovative and insightful company that deals with foreign exchange online. During my time at KiaKiaFX I worked on the frontend part of things as well as server configuration, setup and deployment.',
-                projects: null
+                projects: null,
+                links: [
+                    { name: 'KiaKiaFX', url: 'https://kiakiafx.com' }
+                ]
             },
             {
                 start_date: '2018',
@@ -218,7 +259,10 @@ class Home extends Component {
                 position: 'Designer, System Analyst and Programmer (Freelance)',
                 company: 'Dornnie Private School',
                 description: 'The project is a school management software built with Laravel. The job was a freelance effort and was handled alone. The project involved setting up mailing, handling sessions and a host of other functions.',
-                projects: null
+                projects: null,
+                links: [
+                    { name: 'Dornnie School', url: 'https://dornnieschool.com' }
+                ]
             },
             {
                 start_date: '2018',
@@ -232,7 +276,10 @@ class Home extends Component {
                 position: 'Designer, System Analyst and Programmer (Freelance)',
                 company: 'Stellar Dental Services',
                 description: 'The job was a freelance effort and was handled alone it involved designing, developing and managing a website for a dental practitioner.',
-                projects: null
+                projects: null,
+                links: [
+                    { name: 'Stellar Dental Services', url: 'https://stellardental.com' }
+                ]
             },
             {
                 start_date: '2016',
@@ -365,6 +412,15 @@ class Home extends Component {
                                                 <p key={i} className="list">- {project}</p>
                                             ))}
                                         </>}
+
+                                        {item.links && <>
+                                            <h6 className="links">Link(s):</h6>
+                                            <p className="list">
+                                                {item.links.map((link, i) => (
+                                                    <> | <a key={i} href={`${link.url}`} target="_blank">{link.name}</a></>
+                                                ))}
+                                            </p>
+                                        </>}
                                     </div>
                                 ))}
                             </div>
@@ -385,103 +441,37 @@ class Home extends Component {
 
                         <div className="section-five section">
                             <div className="section">
-                                <h3 className="top-text">EDUCATION</h3>
+                                <h3 className="top-text">PERSONAL ATTRIBUTES</h3>
                                 <div className="rule left">
                                     <hr className="top" />
                                     <hr className="bottom" />
                                 </div>
-                                <p className="sub-top-text">I am information technology enthusuast. I studued law and all its lies. I have a good heart and a good head. I am information technology enthusuast. I studued law and all its lies. I have a good heart and a good head.</p>
-
+                                <br />
                                 <div className="boxes">
                                     <div className="box">
-                                        <h5>June 2019 - Sept 2020</h5>
-                                        <h4>B.Sc Computer Science</h4>
-                                        <h6>Federal Polytechnic Nekede, Owerri</h6>
+                                        <h4>- Honest and Reliable</h4>
+                                        <h6>Able to take on tasks with a high degree of responsibility due to strong morals and ethics ensuring honesty and reliability.</h6>
                                     </div>
                                     <div className="box">
-                                        <h5>June 2019 - Sept 2020</h5>
-                                        <h4>B.Sc Computer Science</h4>
-                                        <h6>Federal Polytechnic Nekede, Owerri</h6>
+                                        <h4>- Flexible</h4>
+                                        <h6>Understands the need to remain flexible to support last-minute demands and changes. Comfortable with changing environments and situations, remaining flexible and adaptable.</h6>
                                     </div>
                                     <div className="box">
-                                        <h5>June 2019 - Sept 2020</h5>
-                                        <h4>B.Sc Computer Science</h4>
-                                        <h6>Federal Polytechnic Nekede, Owerri</h6>
+                                        <h4>- Time Management</h4>
+                                        <h6>Dedicated to effectively prioritising and managing time by allocating tasks and activities and keeping track of them.</h6>
                                     </div>
                                     <div className="box">
-                                        <h5>June 2019 - Sept 2020</h5>
-                                        <h4>B.Sc Computer Science</h4>
-                                        <h6>Federal Polytechnic Nekede, Owerri</h6>
+                                        <h4>- Team Player</h4>
+                                        <h6>Understands the need to work with a team and grasps the concept of team spirit and management of difference of opinions and techniques.</h6>
+                                    </div>
+                                    <div className="box">
+                                        <h4>- Team Leader</h4>
+                                        <h6> Efficient and effective leadership honed from a strong degree of responsibility and a need to get things done.</h6>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div id="portfolio" className="section-six section">
-                            <h3 className="top-text center">PORTFOLIO</h3>
-                            <div className="rule center">
-                                <hr className="top" />
-                                <hr className="bottom" />
-                            </div>
-                            <p className="sub-top-text center">I am information technology enthusuast. I studued law and all its lies. I have a good heart and a good head. I am information technology enthusuast. I studued law and all its lies. I have a good heart and a good head.</p>
-
-                            <div className="bd-example">
-                                <div id="carouselExampleCaptions" className="carousel slide" data-ride="carousel">
-                                    <div className="carousel-inner">
-                                        <div className="carousel-item active">
-                                            <img src="https://res.cloudinary.com/emekamykael45/image/upload/v1583156909/peter/4742a6889200e6c574adec89054240b5_1_zfepyj.png" alt="" />
-                                            <div className="carousel-caption d-none d-md-block">
-                                                <div className="info">
-                                                    <h6>Project</h6>
-                                                    <p>Bazuze</p>
-                                                </div>
-                                                <div className="info">
-                                                    <h6>Description</h6>
-                                                    <p>Bazuze is an international agri-tech firm with lots of bazuze into the agriculture an international agri-tech firm with lot.</p>
-                                                </div>
-                                                <a className="btn btn-white" href="https://www.google.com" target="_blank">See project</a>
-                                            </div>
-                                        </div>
-                                        <div className="carousel-item">
-                                            <img src="https://res.cloudinary.com/emekamykael45/image/upload/v1583753113/peter/797f3851e04705d04fb23a85ea77eb8f_1_r4huae.png" alt="" />
-                                            <div className="carousel-caption d-none d-md-block">
-                                                <div className="info">
-                                                    <h6>Project</h6>
-                                                    <p>Bazuze</p>
-                                                </div>
-                                                <div className="info">
-                                                    <h6>Description</h6>
-                                                    <p>Bazuze is an international agri-tech firm with lots of bazuze into the agriculture an international agri-tech firm with lot.</p>
-                                                </div>
-                                                <a className="btn btn-white" href="https://www.google.com" target="_blank">See project</a>
-                                            </div>
-                                        </div>
-                                        <div className="carousel-item">
-                                            <img src="https://res.cloudinary.com/emekamykael45/image/upload/v1583753113/peter/24fc328a425d7925e1fc7bdb59ef69b6_1_kmgi8c.jpg" alt="" />
-                                            <div className="carousel-caption d-none d-md-block">
-                                                <div className="info">
-                                                    <h6>Project</h6>
-                                                    <p>Bazuze</p>
-                                                </div>
-                                                <div className="info">
-                                                    <h6>Description</h6>
-                                                    <p>Bazuze is an international agri-tech firm with lots of bazuze into the agriculture an international agri-tech firm with lot.</p>
-                                                </div>
-                                                <a className="btn btn-white" href="https://www.google.com" target="_blank">See project</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <a className="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-                                        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                                        <span className="sr-only">Previous</span>
-                                    </a>
-                                    <a className="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-                                        <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                                        <span className="sr-only">Next</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                     <Contact />
 
