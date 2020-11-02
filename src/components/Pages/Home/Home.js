@@ -160,7 +160,7 @@ class Home extends Component {
                 end_date: 2019,
                 position: 'Team Lead / Senior Developer (Porkoyum)',
                 company: 'Divergent Enterprise',
-                description: 'porkoyum.com - PorkoYum is the e-commerce subsidiary of PorkMoney that completes the business cycle. At PorkoYum, end-users will be able to procure the chopped, processed and packaged pig produce and by-products.',
+                description: 'PorkoYum is the e-commerce subsidiary of PorkMoney that completes the business cycle. At PorkoYum, end-users will be able to procure the chopped, processed and packaged pig produce and by-products.',
                 projects: null,
                 links: [
                     { name: 'PorkoYum', url: 'https://porkoyum.com' }
@@ -171,7 +171,7 @@ class Home extends Component {
                 end_date: 2019,
                 position: 'Team Lead / Senior Developer (Porkmoney)',
                 company: 'Divergent Enterprise',
-                description: 'porkmoney.com - Porkmoney.',
+                description: 'Porkmoney is the leading pig farming enterprise in West Africa with an objective to welcome financial partnership from any interested persons around the world. Partners earn between 15-30% returns on their capitals based on plan of choice.',
                 projects: null,
                 links: [
                     { name: 'Porkmoney', url: 'https://porkmoney.com' }
@@ -183,31 +183,28 @@ class Home extends Component {
                 position: 'Team Lead / Senior Developer (Proctorer)',
                 company: 'Divergent Enterprise',
                 description: 'proctorer.com - Proctorer.',
-                projects: null,
-                links: [
-                    { name: 'Proctorer', url: 'https://proctorer.com' }
-                ]
+                projects: null
             },
             {
                 start_date: '2018',
                 end_date: 2019,
                 position: 'Team Lead / Senior Developer (WorkatDubai)',
                 company: 'Divergent Enterprise',
-                description: 'workatdubai.com - WorkatDubai.',
+                description: 'WorkatDubai care for your finances even after getting you a good paying job. WorkatDubai is helping to bridge the gap between semi to highly skilled individuals in Africa and job opportunities in Dubai.',
                 projects: null,
-                links: [
-                    { name: 'WorkatDubai', url: 'https://workatdubai.com' }
-                ]
+                // links: [
+                //     { name: 'WorkatDubai', url: 'https://workatdubai.com' }
+                // ]
             },
             {
                 start_date: '2018',
                 end_date: 2019,
                 position: 'Team Lead / Senior Developer (Osei Consult)',
                 company: 'Divergent Enterprise',
-                description: 'oseiconsult.com - Osei Consult.',
+                description: 'Osei Consult manages your marketing while you focus on your business. Using advanced marketing strategies & tactics, we drive traffic, leads & customers to your business.',
                 projects: null,
                 links: [
-                    { name: 'Osei Consult', url: 'https://oseiconsult.com' }
+                    { name: 'Osei Consult', url: 'https://oseiconsulting.com/' }
                 ]
             },
             {
@@ -221,12 +218,12 @@ class Home extends Component {
             {
                 start_date: '2018',
                 end_date: 2019,
-                position: 'Team Lead / Senior Developer (Femfumds)',
+                position: 'Team Lead / Senior Developer (Femfunds)',
                 company: 'Divergent Enterprise',
-                description: 'femfunds.com - Femfumds.',
+                description: 'Femfunds is a social enterprise that offers Interest free loans (with no collateral) and other resources to female owned growing businesses.',
                 projects: null,
                 links: [
-                    { name: 'Femfumds', url: 'https://femfunds.com' }
+                    { name: 'Femfunds', url: 'femfunds.org' }
                 ]
             },
             {

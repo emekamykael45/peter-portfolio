@@ -41,8 +41,23 @@
     color: var(--color-white);
     line-height: 28px;
 }
+
 .home .banner .left p span {
+    padding: 10px 10px;
+    padding-bottom: 11px;
     font-weight: 500;
+    color: #FFFFFF;
+    width: fit-content;
+    border-radius: 20px;
+    background: rgba(33, 191, 115, 0.1);
+    background: linear-gradient(-45deg, #21BF73, var(--color-yellow), rgba(33, 191, 115, 0.5), rgba(33, 191, 115, 0.1));
+    background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+}
+@keyframes gradient {
+	0% { background-position: 0% 50%; }
+	50% { background-position: 100% 50%; }
+	100% { background-position: 0% 50%; }
 }
 
 .home .banner .left .btn-actions {
